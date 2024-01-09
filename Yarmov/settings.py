@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 ]
 
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/market/cabinet/'
+LOGIN_REDIRECT_URL = '/market/login/'
 SIGNUP_REDIRECT_URL = '/accounts/login/'
 
 SITE_ID = 1

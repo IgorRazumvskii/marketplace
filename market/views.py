@@ -87,11 +87,19 @@ class AboutView(TemplateView):
 
 
 class ContactView(TemplateView):
-    template_name = ''
+    template_name = 'contacts.html'
 
 
 class CatalogView(TemplateView):
     template_name = 'market/catalog.html'
+
+
+class CheckoutView(TemplateView):
+    template_name = 'checkout.html'
+
+
+class MainView(TemplateView):
+    template_name = 'index.html'
 
 
 # создания заказа
