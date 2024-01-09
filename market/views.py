@@ -16,7 +16,7 @@ from cart.cart import Cart
 # вывод товаров
 class ProductList(ListView):
     model = Product
-    template_name = 'market/product_list.html'
+    template_name = 'market/catalog.html'
     context_object_name = 'products'
 
     # достаем категории
@@ -80,6 +80,18 @@ class DataUpdate(LoginRequiredMixin, UpdateView):
 # кабинет
 class CabinetView(LoginRequiredMixin, TemplateView):
     template_name = 'market/cabinet.html'
+
+
+class AboutView(TemplateView):
+    template_name = 'market/aboutus.html'
+
+
+class ContactView(TemplateView):
+    template_name = ''
+
+
+class CatalogView(TemplateView):
+    template_name = 'market/catalog.html'
 
 
 # создания заказа

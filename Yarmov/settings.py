@@ -167,3 +167,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 CART_SESSION_ID = 'cart'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)

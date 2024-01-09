@@ -12,4 +12,8 @@ urlpatterns = [
     path('cabinet/', CabinetView.as_view(), name='cabinet'),
     path('data_create/', DataCreate.as_view(), name='data_create'),
     path('comment/<int:pk>', comment_add, name='comment_add'),
+
+    path('about/', AboutView.as_view(), name='about'),
+    path('catalog/', CatalogView.as_view(), name='catalog'),
+
 ]
